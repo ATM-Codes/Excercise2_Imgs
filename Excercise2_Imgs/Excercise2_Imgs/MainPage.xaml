@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Excercise2_Imgs.MainPage">
+    <StackLayout>
+    <Grid BackgroundColor="White"
+          RowSpacing="1"
+          ColumnSpacing="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Text="4K Wallpaper from www.hdnicewallpapers.com" Background="White" Grid.ColumnSpan="4" Margin="5"/>
+        <Image Grid.Row="1" Grid.Column="0" Source="https://www.hdnicewallpapers.com/Walls/Big/Lion/Charming_White_Lion_Baby.jpg" Background="White" Grid.ColumnSpan="4"></Image>
+            <Label Grid.Row="2" Grid.Column="0" Text="1.5M Like" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="20K Comment" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="2" Grid.Column="2" Text="10K Share" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="2" Grid.Column="3" Text="100K Download" TextColor="Blue" Background="White" Margin="8,0,8,0" />
+        
+        
+    </Grid>
+    </StackLayout>
+
+</ContentPage>

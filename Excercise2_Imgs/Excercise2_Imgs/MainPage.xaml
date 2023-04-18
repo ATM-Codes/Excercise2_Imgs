@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Excercise2_Imgs.MainPage">
     <StackLayout>
+        <!-- Teh beginning of the Grid definitions-->
     <Grid BackgroundColor="White"
           RowSpacing="1"
           ColumnSpacing="3">
         <Grid.RowDefinitions>
+            <!---The beginning of rows defnitions.-->
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -14,22 +16,34 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+           <!---The end of row definitions.-->
+            </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+                <!---The beginning of column defnitions.-->
+                <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto" />
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Text="4K Wallpaper from www.hdnicewallpapers.com" Background="White" Grid.ColumnSpan="4" Margin="5"/>
-        <Image Grid.Row="1" Grid.Column="0" Source="https://www.hdnicewallpapers.com/Walls/Big/Lion/Charming_White_Lion_Baby.jpg" Background="White" Grid.ColumnSpan="4"></Image>
-            <Label Grid.Row="2" Grid.Column="0" Text="1.5M Like" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+                <!---The end of column defnitions.-->
+            </Grid.ColumnDefinitions>
+        <!-- For some reason the second image is not stretached like the first one. Maybe it's because the image dimensions are different -->
+        <Label Grid.Row="0" Grid.Column="0" Text="4K Wallpaper from www.hdnicewallpapers.com" Background="White" Grid.ColumnSpan="4" Margin="15" FontSize="Small" TextColor="Black"/>
+        <Image Grid.Row="1" Grid.Column="0" Source="https://www.hdnicewallpapers.com/Walls/Big/Lion/Charming_White_Lion_Baby.jpg" Margin="0,0,-10,10" Background="White" Grid.ColumnSpan="4"></Image>
+            <!-- Label texts which mimic the comment, share, download and like features-->    
+        <Label Grid.Row="2" Grid.Column="0" Text="1.5M Like" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
             <Label Grid.Row="2" Grid.Column="1" Text="20K Comment" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
             <Label Grid.Row="2" Grid.Column="2" Text="10K Share" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
-            <Label Grid.Row="2" Grid.Column="3" Text="100K Download" TextColor="Blue" Background="White" Margin="8,0,8,0" />
-        
-        
-    </Grid>
+            <Label Grid.Row="2" Grid.Column="3" Text="100K Download" TextColor="Blue" Background="White" Margin="8,0,8,0" /><!-- The small divider-->
+            <BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Color="LightGray" WidthRequest="3" Margin="0,10,-10,10" HeightRequest="2"/>
+            <Image Grid.Row="4" Grid.Column="0" Source="https://www.hdnicewallpapers.com/Walls/Normal/Football/Lionel_Messi_4K_2022_Football_Worlcup_Wallpaper.jpg" Margin="0,0,-10,10" Background="White" Grid.ColumnSpan="4"></Image>
+            <Label Grid.Row="5" Grid.Column="0" Text="2.5M Like" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="5" Grid.Column="1" Text="30K Comment" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="5" Grid.Column="2" Text="50K Share" TextColor="Blue" Background="White" Margin="8,0,8,0"/>
+            <Label Grid.Row="5" Grid.Column="3" Text="300K Download" TextColor="Blue" Background="White" Margin="8,0,8,0" />
+            <BoxView Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="4" Color="LightGray" WidthRequest="3" Margin="0,10,-10,10" HeightRequest="2"/>
+
+        </Grid>
     </StackLayout>
 
 </ContentPage>
